@@ -1,0 +1,190 @@
+@font-face {
+    font-family: Kanit;
+    src: url(/Fonts/Kanit-Black.ttf);
+}
+
+* {
+    font-family: Kanit, Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#cal {
+    padding: 5px;
+    color: #B9BF9E;
+    background-color: #34333C;
+    border-radius: 10px;
+
+}
+
+main {
+    margin: auto;
+    margin-top: 100px;
+    width: 50%;
+    padding: 10px;
+}
+
+
+.cal-Header ul {
+    word-spacing: 60px;
+    text-align: center;
+}
+
+.cal-Header ul li {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.cal-name{
+    font-size: 30px;
+
+}
+
+.cal-solar {
+    bottom: -20px;
+    position: relative;
+    width: 160px;
+    height: 50px;
+    background-color: black;
+    border-radius: 10px;
+
+
+}
+
+.cal-model{
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Display{
+    box-shadow: inset 10px 10px 5px rgb(0, 0, 0),inset -10px -10px 5px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 5px;
+    height: 70px;
+    background-color: #BCE4CB;
+}
+
+.Buttons{
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    padding: 10px;
+}
+
+.btn{
+    position: relative;
+    font-size: larger;
+    padding: 0px;
+    margin: 5px;
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+}
+.C,.AC{
+    right: 150px;
+    background-color: #CB4B76;
+    color: white;
+}
+.C{
+    top: 60px;
+    right: 233px;
+}
+.seven{
+    bottom: 120px;
+    right: 300px;
+    
+}
+
+.eight{
+    bottom: 120px;
+    right: 100px;
+}
+.nine{
+    bottom: 120px;
+    left: 100px;
+}
+
+.four{
+    bottom: 120px;
+    right: 215px;
+}
+
+.five{
+    bottom: 120px;
+    right: 12px;
+}
+
+.six{
+    bottom: 120px ;
+    left: 185px;
+}
+
+.one{
+    bottom: 120px;
+    right: 135px;
+}
+
+.two{
+    bottom: 120px;
+    left: 70px;
+
+}
+
+.three{
+    bottom: 60px;
+    right: 55px;
+}
+
+.twozeros{
+    top: 60px;
+    right: 55px;
+}
+
+.point{
+    top: 120px;
+    right: 180px;
+
+}
+
+.equalsto{
+    top: 120px;
+    left: 185px;
+}
+
+.multiply{
+    left: 130px;
+
+
+}
+
+.divide{
+    left: 240px;
+    bottom: 60px;
+}
+
+.subtract{
+    left: 48px;
+    top: 60px;
+
+}
+
+.addition{
+    left: 215px;
+    top: 150px;
+    visibility: hidden;
+}
+
+.zero{
+    bottom: 120px;
+    right: 310px;
+}
+
+.additionBackup{
+    height: 110px;
+    bottom: 200px;
+    left: 840px
+}
