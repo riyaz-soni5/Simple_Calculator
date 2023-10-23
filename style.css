@@ -3,13 +3,26 @@
     src: url(/Fonts/Kanit-Black.ttf);
 }
 
+@font-face {
+    font-family: digital-7;
+    src: url(/Fonts/digital-7.ttf);
+}
+
 * {
     font-family: Kanit, Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
 }
 
+body {
+    background-color: #60ABFB;
+
+}
+
 #cal {
+    border: 3px solid black;
+    box-shadow: -5px -5px 30px white, 5px 5px 30px wheat;
+
     padding: 5px;
     color: #B9BF9E;
     background-color: #34333C;
@@ -36,7 +49,7 @@ main {
     margin: 10px;
 }
 
-.cal-name{
+.cal-name {
     font-size: 30px;
 
 }
@@ -52,13 +65,14 @@ main {
 
 }
 
-.cal-model{
+.cal-model {
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.Display{
-    box-shadow: inset 10px 10px 5px rgb(0, 0, 0),inset -10px -10px 5px;
+.Display {
+    overflow: hidden;
+    box-shadow: inset 10px 10px 5px rgb(0, 0, 0), inset -10px -10px 5px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -68,14 +82,24 @@ main {
     background-color: #BCE4CB;
 }
 
-.Buttons{
+.display-number {
+    width: 95%;
+    height: 40px;
+    text-align: end;
+    font-size: 50px;
+    font-family: digital-7, Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 10px;
+}
+
+.Buttons {
     margin: auto;
     margin-top: 20px;
     width: 50%;
     padding: 10px;
 }
 
-.btn{
+.btn {
     position: relative;
     font-size: larger;
     padding: 0px;
@@ -84,106 +108,111 @@ main {
     height: 50px;
     border-radius: 10px;
 }
-.C,.AC{
+
+.C,
+.AC {
     right: 150px;
     background-color: #CB4B76;
     color: white;
 }
-.C{
+
+.C {
     top: 60px;
     right: 233px;
 }
-.seven{
+
+.seven {
     bottom: 120px;
     right: 300px;
-    
+
 }
 
-.eight{
+.eight {
     bottom: 120px;
     right: 100px;
 }
-.nine{
+
+.nine {
     bottom: 120px;
     left: 100px;
 }
 
-.four{
+.four {
     bottom: 120px;
     right: 215px;
 }
 
-.five{
+.five {
     bottom: 120px;
     right: 12px;
 }
 
-.six{
-    bottom: 120px ;
+.six {
+    bottom: 120px;
     left: 185px;
 }
 
-.one{
+.one {
     bottom: 120px;
     right: 135px;
 }
 
-.two{
+.two {
     bottom: 120px;
     left: 70px;
 
 }
 
-.three{
+.three {
     bottom: 60px;
     right: 55px;
 }
 
-.twozeros{
+.twozeros {
     top: 60px;
     right: 55px;
 }
 
-.point{
+.point {
     top: 120px;
     right: 180px;
 
 }
 
-.equalsto{
+.equalsto {
     top: 120px;
     left: 185px;
 }
 
-.multiply{
+.multiply {
     left: 130px;
 
 
 }
 
-.divide{
+.divide {
     left: 240px;
     bottom: 60px;
 }
 
-.subtract{
+.subtract {
     left: 48px;
     top: 60px;
 
 }
 
-.addition{
+.addition {
     left: 215px;
     top: 150px;
     visibility: hidden;
 }
 
-.zero{
+.zero {
     bottom: 120px;
     right: 310px;
 }
 
-.additionBackup{
+.additionBackup {
     height: 110px;
     bottom: 200px;
     left: 840px
