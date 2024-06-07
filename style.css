@@ -15,15 +15,22 @@
 }
 
 body {
-    background-color: #60ABFB;
+    background-image: linear-gradient(skyblue,blue);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-between;
+
 
 }
 
 #cal {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
     border: 3px solid black;
     box-shadow: -5px -5px 30px white, 5px 5px 30px wheat;
-
-    padding: 5px;
     color: #B9BF9E;
     background-color: #34333C;
     border-radius: 10px;
@@ -31,59 +38,55 @@ body {
 }
 
 main {
-    margin: auto;
-    margin-top: 100px;
-    width: 50%;
+    display: flex;
+    align-self: center;
+
+}
+
+
+.cal-Header{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
     padding: 10px;
-}
 
 
-.cal-Header ul {
-    word-spacing: 60px;
-    text-align: center;
 }
 
-.cal-Header ul li {
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px;
-}
 
 .cal-name {
+    flex: 1;
     font-size: 30px;
 
 }
 
 .cal-solar {
-    bottom: -20px;
-    position: relative;
-    width: 160px;
-    height: 50px;
+    flex-grow: 1;
+    height: 100%;
     background-color: black;
     border-radius: 10px;
+    justify-items: start;
 
 
 }
 
 .cal-model {
+    flex: 1;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .Display {
-    overflow: hidden;
+    display: flex;
     box-shadow: inset 10px 10px 5px rgb(0, 0, 0), inset -10px -10px 5px;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
     width: 90%;
-    padding: 5px;
-    height: 70px;
     background-color: #BCE4CB;
 }
 
 .display-number {
-    width: 95%;
+    width: 100%;
     height: 40px;
     text-align: end;
     font-size: 50px;
@@ -93,127 +96,39 @@ main {
 }
 
 .Buttons {
-    margin: auto;
-    margin-top: 20px;
-    width: 50%;
+    
+    display: grid;
+    grid-template: repeat(4,1fr)/repeat(6,1fr);
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+    gap: 15px;
     padding: 10px;
 }
 
-.btn {
-    position: relative;
-    font-size: larger;
-    padding: 0px;
-    margin: 5px;
+
+.btn{
     width: 70px;
     height: 50px;
     border-radius: 10px;
+    font-size: larger;
+    margin: 5px;
+    border: 2px solid black;
 }
 
-.C,
-.AC {
-    right: 150px;
+.zero{
+    grid-column: 1;
+}
+
+.twozeros{
+    grid-column: 2;
+}
+
+.addition{
+    height: 100%;
+    grid-column: 5;
+    grid-row: 3/5;
+}
+
+.AC,.C{
     background-color: #CB4B76;
-    color: white;
-}
-
-.C {
-    top: 60px;
-    right: 233px;
-}
-
-.seven {
-    bottom: 120px;
-    right: 300px;
-
-}
-
-.eight {
-    bottom: 120px;
-    right: 100px;
-}
-
-.nine {
-    bottom: 120px;
-    left: 100px;
-}
-
-.four {
-    bottom: 120px;
-    right: 215px;
-}
-
-.five {
-    bottom: 120px;
-    right: 12px;
-}
-
-.six {
-    bottom: 120px;
-    left: 185px;
-}
-
-.one {
-    bottom: 120px;
-    right: 135px;
-}
-
-.two {
-    bottom: 120px;
-    left: 70px;
-
-}
-
-.three {
-    bottom: 60px;
-    right: 55px;
-}
-
-.twozeros {
-    top: 60px;
-    right: 55px;
-}
-
-.point {
-    top: 120px;
-    right: 180px;
-
-}
-
-.equalsto {
-    top: 120px;
-    left: 185px;
-}
-
-.multiply {
-    left: 130px;
-
-
-}
-
-.divide {
-    left: 240px;
-    bottom: 60px;
-}
-
-.subtract {
-    left: 48px;
-    top: 60px;
-
-}
-
-.addition {
-    left: 215px;
-    top: 150px;
-    visibility: hidden;
-}
-
-.zero {
-    bottom: 120px;
-    right: 310px;
-}
-
-.additionBackup {
-    height: 110px;
-    bottom: 200px;
-    left: 840px
 }
